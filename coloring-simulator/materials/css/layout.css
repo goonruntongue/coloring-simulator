@@ -342,3 +342,18 @@ p.space {
         margin: 0 auto;
     }
 }
+
+footer.m.mf {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+}
+
+footer div.qr {
+    width: 72px;
+}
+
+footer img {
+    width: 100%;
+}
