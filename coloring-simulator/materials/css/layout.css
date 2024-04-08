@@ -388,7 +388,7 @@ footer img {
     }
     .col_left,
     .col_right {
-        padding: 0;
+        padding: 10px;
         max-width: 90%;
     }
     div.top_image p {
