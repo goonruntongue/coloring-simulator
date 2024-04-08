@@ -79,15 +79,14 @@ p.explain {
 
 .base {
     width: 70%;
-    /* background: #f8f8f8; */
 }
 
 .main {
-    width: 20%;
+    width: 25%;
 }
 
 .accent {
-    width: 10%;
+    width: 5%;
 }
 
 #colorpicker1,
@@ -220,4 +219,17 @@ p.space.title:after {
         width: fit-content;
         background-position-x: 0.2em;
     }
+    .base {
+        width: 55%;
+    }
+    .main {
+        width: 30%;
+    }
+    .accent {
+        width: 15%;
+    }
+}
+
+.top_image p img {
+    width: 33%;
 }
