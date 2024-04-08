@@ -441,19 +441,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
 // })
 
 // 慣性スクロールを試す
-$('body').niceScroll({
-    cursorcolor: "#888888", // change cursor color in hex
-    cursoropacitymin: 0.2, // change opacity when cursor is inactive (scrollabar "hidden" state), range from 1 to 0
-    cursoropacitymax: 1, // change opacity when cursor is active (scrollabar "visible" state), range from 1 to 0
-    cursorwidth: "10px", // cursor width in pixel (you can also write "5px")
-    cursorborder: "1px solid #fff", // css definition for cursor border
-    cursorborderradius: "5px", // border radius in pixel for cursor 
-    scrollspeed: 120, // scrolling speed
-    mousescrollstep: 60, // scrolling speed with mouse wheel (pixel)
-    emulatetouch: false, // enable cursor-drag scrolling like touch devices in desktop computer
-    hwacceleration: true, // use hardware accelerated scroll when supported
-    gesturezoom: true, // (only when boxzoom=true and with touch devices) zoom activated when pinch out/in on box
-    grabcursorenabled: false, // (only when touchbehavior=true) display "grab" icon
-    railpadding: { top: 0, right: 10, left: 0, bottom: 0 }, // set padding for rail bar
-    hidecursordelay: 400, // set the delay in microseconds to fading out scrollbars
-});
+if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
+    $('body').niceScroll({
+        cursorcolor: "#888888", // change cursor color in hex
+        cursoropacitymin: 0.2, // change opacity when cursor is inactive (scrollabar "hidden" state), range from 1 to 0
+        cursoropacitymax: 1, // change opacity when cursor is active (scrollabar "visible" state), range from 1 to 0
+        cursorwidth: "10px", // cursor width in pixel (you can also write "5px")
+        cursorborder: "1px solid #fff", // css definition for cursor border
+        cursorborderradius: "5px", // border radius in pixel for cursor 
+        scrollspeed: 120, // scrolling speed
+        mousescrollstep: 60, // scrolling speed with mouse wheel (pixel)
+        emulatetouch: false, // enable cursor-drag scrolling like touch devices in desktop computer
+        hwacceleration: true, // use hardware accelerated scroll when supported
+        gesturezoom: true, // (only when boxzoom=true and with touch devices) zoom activated when pinch out/in on box
+        grabcursorenabled: false, // (only when touchbehavior=true) display "grab" icon
+        railpadding: { top: 0, right: 10, left: 0, bottom: 0 }, // set padding for rail bar
+        hidecursordelay: 400, // set the delay in microseconds to fading out scrollbars
+    });
+}
