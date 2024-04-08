@@ -390,6 +390,9 @@ footer img {
         padding: 0;
         max-width: 90%;
     }
+    div.top_image p {
+        line-height: normal;
+    }
 }
 
 * {
