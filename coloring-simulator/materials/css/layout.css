@@ -305,6 +305,7 @@ p.space {
     font-size: 2em;
     cursor: pointer;
     position: fixed;
+    z-index: 15;
     right: 1em;
     bottom: 1em;
     color: #000;
