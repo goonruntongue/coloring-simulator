@@ -200,7 +200,7 @@ p.space.title:after {
         transform: translateX(0);
     }
     a.open {
-        top: 80px;
+        top: 115px;
         left: 0;
         right: 0;
         margin: auto;
@@ -213,5 +213,11 @@ p.space.title:after {
     #colorpicker2 span,
     #colorpicker3 span {
         display: none;
+    }
+    .logo {
+        padding: 0.2em 0.2em 0.2em 1.8em;
+        margin: 0 auto;
+        width: fit-content;
+        background-position-x: 0.2em;
     }
 }
