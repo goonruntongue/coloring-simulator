@@ -446,9 +446,9 @@ if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
         cursorcolor: "#888888", // change cursor color in hex
         cursoropacitymin: 0.2, // change opacity when cursor is inactive (scrollabar "hidden" state), range from 1 to 0
         cursoropacitymax: 1, // change opacity when cursor is active (scrollabar "visible" state), range from 1 to 0
-        cursorwidth: "10px", // cursor width in pixel (you can also write "5px")
+        cursorwidth: "15px", // cursor width in pixel (you can also write "5px")
         cursorborder: "1px solid #fff", // css definition for cursor border
-        cursorborderradius: "5px", // border radius in pixel for cursor 
+        cursorborderradius: "20px", // border radius in pixel for cursor 
         scrollspeed: 100, // scrolling speed
         mousescrollstep: 60, // scrolling speed with mouse wheel (pixel)
         emulatetouch: false, // enable cursor-drag scrolling like touch devices in desktop computer
