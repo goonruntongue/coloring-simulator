@@ -23,6 +23,8 @@ h1 {
     font-size: 3em;
     /* max-width: 100%; */
     /* overflow: hidden; */
+    position: relative;
+    z-index: 30;
 }
 
 .logo:first-letter {
@@ -44,6 +46,7 @@ nav ul {
     margin: 0;
     padding-left: 0;
     background: url(../images/dots.png) center/16px;
+    padding-bottom: 0.5em;
 }
 
 nav ul li {
@@ -112,6 +115,7 @@ div.box_container>div {
     /* padding: 8px; */
     margin: 8px;
     background: url(../images/photo.png) no-repeat center #eaeaea;
+    max-width: 100%;
 }
 
 div.tag {
@@ -134,7 +138,7 @@ div.top_image p {
     opacity: .6;
     z-index: 30;
     font-size: 5em;
-    top: 0px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -164,6 +168,7 @@ div.top_image p:hover {
     /* height: 70vh; */
     margin: 0 auto;
     flex-wrap: wrap;
+    padding-top: 1em;
 }
 
 .col_left {
@@ -200,6 +205,7 @@ footer {
 .accent {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
 span.badge {
@@ -306,6 +312,7 @@ p.space {
     -webkit-user-select: none;
     box-shadow: 1px 1px 8px 0px black;
     opacity: 0.8;
+    line-height: 1;
 }
 
 .return a {
@@ -348,6 +355,7 @@ footer {
     align-items: center;
     gap: 1em;
     justify-content: center;
+    flex-direction: row;
 }
 
 footer div.qr {
@@ -356,4 +364,34 @@ footer div.qr {
 
 footer img {
     width: 100%;
+}
+
+@media screen and (max-width:500px) {
+    span.badge {
+        display: none;
+    }
+    p.explain {
+        padding: 0 1em;
+    }
+    footer div.qr {
+        width: 200px;
+        height: 70px;
+        display: none;
+    }
+    div.box_container>div {
+        width: 100%;
+        margin: 0;
+    }
+    div.box_container.grid {
+        max-width: 90%;
+    }
+    .col_left,
+    .col_right {
+        padding: 0;
+        max-width: 90%;
+    }
+}
+
+* {
+    box-sizing: border-box;
 }
