@@ -222,10 +222,6 @@ $(".start_button").on("click", function() {
     $("div.top_image").css("border", "none");
     $("div.top_image div:first-of-type").show(100);
     SlideStart(true);
-    $(".parallax").css({
-        "background-image": "url(materials/images/bg2.png)"
-    })
-
 });
 
 $(".stop_button").on("click", function() {
@@ -308,24 +304,6 @@ $("div.ham").on("click", function() {
     $(".global").toggleClass("show");
 });
 
-/*-article-部分画像のパララックス-*/
-$(window).on("scroll", function() {
-    var WH = $(window).height();
-    var WS = $(window).scrollTop();
-    var POT = $(".parallax").offset().top;
-
-    //console.log(WS);
-    if (WH + WS > POT) {
-        $(".parallax").css({
-            "background-position-y": -1 * WS / 100 * 25
-        })
-    } else {
-        $(".parallax").css({
-            "background-position-y": 0
-        })
-    }
-
-})
 
 /*window.matchMedia().matchesによるカラー決定ボックスの文字サイズ変更*/
 /*動作関数を定義…引数Query_Valを措定し、後に定義するブレイクポイントで処理の分岐を設定できるようにしておく*/
@@ -439,3 +417,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     });
 });
+
+// この部分はカラー設定の説明のためにはよろしくないので、起動させないことにする
+/*-article-部分画像のパララックス-*/
+// $(".start_btn").on("click", function() {
+//     $(".parallax").css({
+//         "background-image": "url(materials/images/bg2.png)"
+//     })
+// })
+// $(window).on("scroll", function() {
+//     var WH = $(window).height();
+//     var WS = $(window).scrollTop();
+//     var POT = $(".parallax").offset().top;
+//     if (WH + WS > POT) {
+//         $(".parallax").css({
+//             "background-position-y": -1 * WS / 100 * 25
+//         })
+//     } else {
+//         $(".parallax").css({
+//             "background-position-y": 0
+//         })
+//     }
+// })
