@@ -449,7 +449,7 @@ if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
         cursorwidth: "10px", // cursor width in pixel (you can also write "5px")
         cursorborder: "1px solid #fff", // css definition for cursor border
         cursorborderradius: "5px", // border radius in pixel for cursor 
-        scrollspeed: 120, // scrolling speed
+        scrollspeed: 100, // scrolling speed
         mousescrollstep: 60, // scrolling speed with mouse wheel (pixel)
         emulatetouch: false, // enable cursor-drag scrolling like touch devices in desktop computer
         hwacceleration: true, // use hardware accelerated scroll when supported
@@ -457,5 +457,6 @@ if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
         grabcursorenabled: false, // (only when touchbehavior=true) display "grab" icon
         railpadding: { top: 0, right: 10, left: 0, bottom: 0 }, // set padding for rail bar
         hidecursordelay: 400, // set the delay in microseconds to fading out scrollbars
+        smoothscroll: true
     });
 }
