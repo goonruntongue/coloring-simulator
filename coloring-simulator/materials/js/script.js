@@ -457,6 +457,7 @@ if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
         grabcursorenabled: false, // (only when touchbehavior=true) display "grab" icon
         railpadding: { top: 0, right: 10, left: 0, bottom: 0 }, // set padding for rail bar
         hidecursordelay: 400, // set the delay in microseconds to fading out scrollbars
-        smoothscroll: true
+        smoothscroll: true,
+zindex:1000
     });
 }
