@@ -401,3 +401,9 @@ footer img {
 * {
     box-sizing: border-box;
 }
+
+@media screen and (max-width:768px) {
+    .box_container2.bf {
+        width: 90%;
+    }
+}
