@@ -47,6 +47,7 @@ nav ul {
     padding-left: 0;
     background: url(../images/dots.png) center/16px;
     padding-bottom: 0.5em;
+    padding-top: 0.5em;
 }
 
 nav ul li {
